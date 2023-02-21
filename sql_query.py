@@ -1,3 +1,4 @@
+1.
 import sqlite3
 
 # Create a SQL connection to our SQLite database
@@ -18,6 +19,20 @@ FROM (
 
 # Be sure to close the connection
 con.close()
+
+
+2.
+import sqlite3
+
+conn = sqlite3.connect('justjoin.sqlite')
+c = conn.cursor()
+
+c.execute('DROP TABLE tech;')
+
+conn.commit()
+conn.close()
+
+
 
 
 # Open Table
