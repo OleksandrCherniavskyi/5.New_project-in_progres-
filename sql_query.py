@@ -20,7 +20,11 @@ FROM (
 con.close()
 
 
-#Count Technologies
+# Open Table
+ SELECT *
+  FROM tech;
+
+# Count Technologies
 SELECT SUM(Count) AS TotalCount
 FROM (
   SELECT COUNT(*) AS Count
